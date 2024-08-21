@@ -1,0 +1,4 @@
+{
+  "name": "package-type-module",
+  "description": "Adds type: module to package.json"
+}
