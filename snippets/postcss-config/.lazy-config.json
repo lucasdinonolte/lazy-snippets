@@ -1,0 +1,4 @@
+{
+  "name": "postcss-config",
+  "description": "Create a postcss config with the plugins I often use"
+}

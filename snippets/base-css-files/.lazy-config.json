@@ -1,0 +1,41 @@
+{
+  "name": "base-css-files",
+  "description": "Base CSS files",
+  "inputs": [
+    {
+      "name": "directory",
+      "description": "Where should these files go?",
+      "type": "text",
+      "default": "src/styles"
+    },
+    {
+      "name": "includeBreakpoints",
+      "type": "confirm",
+      "default": true,
+      "message": "Do you want to include breakpoint variables (custom media syntax)?"
+    }
+  ],
+  "templates": [
+    {
+      "src": "reset.template.hbs",
+      "dest": "{{directory}}/reset.css"
+    },
+    {
+      "src": "global.template.hbs",
+      "dest": "{{directory}}/global.css"
+    },
+    {
+      "src": "variables.template.hbs",
+      "dest": "{{directory}}/variables.css"
+    },
+    {
+      "src": "breakpoints.template.hbs",
+      "dest": "{{directory}}/breakpoints.css",
+      "when": {
+        "includeBreakpoints": {
+          "eq": true
+        }
+      }
+    }
+  ]
+}

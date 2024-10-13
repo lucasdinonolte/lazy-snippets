@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@csstools/postcss-global-data": "^2.0.1",
+    "@lehoczky/postcss-fluid": "^1.0.3",
+    "postcss": "^8.4",
+    "postcss-preset-env": "^9.6.0"
+  }
+}
