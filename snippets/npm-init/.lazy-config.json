@@ -1,0 +1,42 @@
+{
+  "name": "NPM Init",
+  "description": "Scaffolds a basic package.json",
+  "inputs": [
+    {
+      "name": "name",
+      "type": "text",
+      "default": "@lucasdinonolte/package",
+      "message": "Name"
+    },
+    {
+      "name": "main",
+      "type": "text",
+      "default": "src/index.js",
+      "message": "Main"
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "default": "0.0.1",
+      "message": "Version"
+    },
+    {
+      "name": "license",
+      "type": "text",
+      "default": "MIT",
+      "message": "License"
+    },
+    {
+      "name": "author",
+      "type": "text",
+      "default": "Lucas Dino Nolte <hello@lucas-nolte.com>",
+      "message": "Author"
+    }
+  ],
+  "templates": [
+    {
+      "src": "package.template.hbs",
+      "dest": "package.json"
+    }
+  ]
+}

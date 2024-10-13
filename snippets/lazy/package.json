@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "scaffold": "lazy ./.snippets"
+  },
+  "devDependencies": {
+    "@lucasdinonolte/lazy-cli": "^0.2.0"
+  }
+}

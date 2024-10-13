@@ -1,10 +1,9 @@
 {
   "scripts": {
-    "lint": "eslint ."
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.5.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "prettier": "2.7.1"
+    "prettier": "^3.3.2"
   }
 }
